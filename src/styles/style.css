@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  padding: 1em 7em;
+}
+
+.movie-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 0 22%;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #e3e3e3;
+  margin: 0.5em;
+}
+
+.movie-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 209, 178, 0.3)),
+    url("../movie.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 2em;
+  }
+
+  .movie-item {
+    flex: 1 0 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1em;
+  }
+  .movie-item {
+    flex: 1 0 80%;
+  }
+}

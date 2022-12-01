@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import "~bulma/bulma";
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+$beige-lighter: #eff0eb;
+
+$family-sans-serif: "Nunito", sans-serif;
+
+$body-background-color: $beige-lighter;
+$footer-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+@import "../../node_modules/bulma/sass/base/generic.sass";
+@import "../../node_modules/bulma/sass/layout/footer.sass";
